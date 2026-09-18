@@ -1,0 +1,30 @@
+====================================================================
+PROJECT NAME: AgentHire (AI Recruitment Agent Platform)
+PROJECT TYPE: Spec-Driven Multi-Agent Recruitment Platform
+====================================================================
+
+OVERVIEW:
+AgentHire is a full-stack AI Recruitment Agent platform that lets recruiters create jobs, publish public application routes, receive candidate PDF resumes, and process those resumes through a LangGraph-driven AI workflow. The platform pauses the workflow at a human approval checkpoint, generates interview material, produces email output through Resend, persists every workflow step with retries and resumability, renders the workflow live on a React Flow canvas, and reports candidate and workflow analytics for recruiters.
+
+All hiring thresholds, workflow order, retry policy, prompt rules, shortlisting rules, RAG chunking and similarity settings, email templates, and workflow node colors come from /specs. These values are not hardcoded inside controllers, services, agents, or UI components.
+
+TECH STACK:
+- Frontend: Next.js 15 App Router, JavaScript, React 19, Tailwind CSS, Zustand, React Hook Form, Zod, React Flow, Lucide Icons.
+- Backend: Node.js 20+, Express.js, MongoDB, Mongoose, Zod validation, JWT, bcryptjs, multer for PDF uploads, helmet, cors, LangGraph, LangChain, BAAI/bge-small-en-v1.5 embeddings, Qdrant vector database, Groq / OpenRouter LLMs, Resend email.
+- Testing: Jest, Supertest.
+
+CORE ENTITIES:
+- Users (id, name, email, password, role, created_at)
+- Jobs (id, title, description, required_skills, preferred_skills, min_experience, workflow_spec_id, hiring_spec_id, creator, created_at)
+- Candidates (id, name, email, phone, resume_url, parsed_resume_json, match_score, status, job_id, created_at)
+- Workflows (id, candidate_id, job_id, current_state, status, retries, created_at, updated_at)
+- WorkflowLogs (id, workflow_id, agent_name, input, output, status, error, created_at)
+
+WORKFLOW SEQUENCE:
+1. resume_parser
+2. embedding_agent
+3. matching_agent
+4. shortlisting_agent
+5. human_approval (pauses execution -> waiting_approval)
+6. interview_agent
+7. email_agent

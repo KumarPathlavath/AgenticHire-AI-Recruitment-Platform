@@ -1,0 +1,23 @@
+{
+  "chunk_size": {
+    "resume": 500,
+    "policy": 1000,
+    "interview_guide": 800
+  },
+  "chunk_overlap": {
+    "resume": 50,
+    "policy": 100,
+    "interview_guide": 80
+  },
+  "retrieval": {
+    "top_k": 5,
+    "minimum_similarity": 0.75,
+    "similarity_metric": "cosine"
+  },
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "vector_dimensions": 384,
+  "collection_names": {
+    "resumes": "agent_hire_resumes",
+    "policies": "agent_hire_policies"
+  }
+}

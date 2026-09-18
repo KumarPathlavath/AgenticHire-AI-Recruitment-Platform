@@ -1,0 +1,29 @@
+{
+  "rules": [
+    {
+      "decision": "shortlisted",
+      "min_score": 80,
+      "max_score": 100,
+      "description": "Candidate demonstrates strong required and preferred skill match and meets experience criteria.",
+      "requires_human_approval": true,
+      "allow_interview": true
+    },
+    {
+      "decision": "hold",
+      "min_score": 60,
+      "max_score": 79,
+      "description": "Candidate demonstrates moderate skill match with partial requirements or close experience match.",
+      "requires_human_approval": true,
+      "allow_interview": true
+    },
+    {
+      "decision": "rejected",
+      "min_score": 0,
+      "max_score": 59,
+      "description": "Candidate lacks essential required skills or minimum required experience threshold.",
+      "requires_human_approval": false,
+      "allow_interview": false
+    }
+  ],
+  "default_decision": "hold"
+}

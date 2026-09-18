@@ -1,0 +1,58 @@
+{
+  "workflow_id": "default-hiring-workflow",
+  "name": "Standard AI Hiring Pipeline",
+  "description": "Standard 7-step recruitment pipeline with LangGraph orchestration, RAG matching, human checkpoint, and automated interview/email generation.",
+  "workflow": [
+    "resume_parser",
+    "embedding_agent",
+    "matching_agent",
+    "shortlisting_agent",
+    "human_approval",
+    "interview_agent",
+    "email_agent"
+  ],
+  "nodes": [
+    {
+      "id": "resume_parser",
+      "name": "Resume Parser",
+      "type": "agent",
+      "description": "Extracts candidate details, skills, experience, and education from PDF resume."
+    },
+    {
+      "id": "embedding_agent",
+      "name": "Embedding Agent",
+      "type": "agent",
+      "description": "Generates BAAI/bge-small-en-v1.5 embeddings and stores chunks in Qdrant."
+    },
+    {
+      "id": "matching_agent",
+      "name": "Matching Agent",
+      "type": "agent",
+      "description": "Calculates skill alignment against job criteria with RAG contextual analysis."
+    },
+    {
+      "id": "shortlisting_agent",
+      "name": "Shortlisting Agent",
+      "type": "agent",
+      "description": "Determines candidate qualification (shortlisted, hold, rejected) using spec thresholds."
+    },
+    {
+      "id": "human_approval",
+      "name": "Human Approval",
+      "type": "checkpoint",
+      "description": "Pauses workflow for recruiter evaluation, approval, or rejection."
+    },
+    {
+      "id": "interview_agent",
+      "name": "Interview Agent",
+      "type": "agent",
+      "description": "Generates role-tailored technical questions, coding exercises, and scoring rubrics."
+    },
+    {
+      "id": "email_agent",
+      "name": "Email Agent",
+      "type": "agent",
+      "description": "Generates personalized interview invite or polite rejection notice."
+    }
+  ]
+}

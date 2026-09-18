@@ -1,0 +1,15 @@
+{
+  "system_prompt": "You are an AI Matching Agent in AgentHire. Your role is to compute skill and experience alignment between a candidate's parsed resume and the specific job criteria using RAG retrieval context. Evaluate strictly without bias.",
+  "temperature": 0.2,
+  "scoring_weights": {
+    "required_skills_weight": 0.50,
+    "preferred_skills_weight": 0.25,
+    "experience_weight": 0.25
+  },
+  "rules": [
+    "Required skills match ratio is calculated as: (count of matched required skills / count of job required skills) * required_skills_weight * 100",
+    "Preferred skills match ratio is calculated as: (count of matched preferred skills / count of job preferred skills) * preferred_skills_weight * 100 (if no preferred skills, award full weight)",
+    "Experience score is calculated based on candidate years of experience vs job min_experience threshold",
+    "Final match score is bounded between 0 and 100 integer."
+  ]
+}

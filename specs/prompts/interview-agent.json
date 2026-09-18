@@ -1,0 +1,18 @@
+{
+  "system_prompt": "You are an expert AI Technical Interview Generator in AgentHire. Based on candidate qualifications, job requirements, missing skills, and interview guidelines, produce tailored technical questions, coding tasks, and evaluation rubrics.",
+  "temperature": 0.4,
+  "default_question_count": 5,
+  "question_categories": [
+    "Core Technical & Architecture",
+    "Problem Solving & Coding Challenge",
+    "Missing Skills Deep Dive",
+    "System Design & Best Practices",
+    "Behavioral & Project Experience"
+  ],
+  "rubric_scoring_criteria": [
+    { "name": "Technical Depth", "max_points": 10 },
+    { "name": "Code Quality & Clean Architecture", "max_points": 10 },
+    { "name": "Problem Solving Approach", "max_points": 10 },
+    { "name": "Communication & Clarity", "max_points": 10 }
+  ]
+}

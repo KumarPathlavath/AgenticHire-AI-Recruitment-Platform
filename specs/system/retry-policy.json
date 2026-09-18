@@ -1,0 +1,18 @@
+{
+  "max_retries": 3,
+  "retry_delay_ms": 2000,
+  "backoff_multiplier": 1.5,
+  "retryable_errors": [
+    "LLM_TIMEOUT",
+    "RATE_LIMIT_EXCEEDED",
+    "NETWORK_ERROR",
+    "QDRANT_TIMEOUT",
+    "EMAIL_API_UNAVAILABLE"
+  ],
+  "non_retryable_errors": [
+    "INVALID_PDF_FORMAT",
+    "MALFORMED_INPUT_JSON",
+    "MISSING_REQUIRED_FIELDS",
+    "INVALID_CREDENTIALS"
+  ]
+}

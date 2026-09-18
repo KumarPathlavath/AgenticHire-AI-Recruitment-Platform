@@ -1,0 +1,5 @@
+{
+  "subject_template": "Update regarding your application for {{job_title}} at AgentHire",
+  "sender": "AgentHire Talent Team <recruiting@agenthire.local>",
+  "body_template": "Dear {{candidate_name}},\n\nThank you for taking the time to apply for the {{job_title}} role at AgentHire and for sharing your background with us.\n\nWhile your skills and experience are commendable, we have decided to move forward with candidates whose current profile more closely aligns with our specific requirements at this time.\n\nWe will keep your resume in our talent network for future opportunities that match your background.\n\nWe wish you the best in your career endeavors.\n\nWarm regards,\nAgentHire Recruiting Team"
+}

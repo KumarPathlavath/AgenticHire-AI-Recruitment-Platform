@@ -1,0 +1,5 @@
+{
+  "subject_template": "Invitation to Technical Interview at AgentHire - {{job_title}}",
+  "sender": "AgentHire Talent Team <recruiting@agenthire.local>",
+  "body_template": "Hi {{candidate_name}},\n\nThank you for applying for the {{job_title}} position at AgentHire. We were impressed by your background in {{highlighted_skills}} and your overall score of {{match_score}}%.\n\nWe would like to invite you to the next stage: a technical interview with our team. Please choose a suitable time slot via the scheduling link below.\n\nKey Focus Areas for your interview:\n{{interview_topics}}\n\nBest regards,\nThe AgentHire Recruiting Team"
+}

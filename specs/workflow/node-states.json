@@ -1,0 +1,54 @@
+{
+  "states": {
+    "pending": {
+      "color": "#64748b",
+      "background": "#f8fafc",
+      "border": "#cbd5e1",
+      "dark_background": "#1e293b",
+      "dark_border": "#334155",
+      "badge": "Pending",
+      "status_code": "pending",
+      "icon": "CircleDot"
+    },
+    "running": {
+      "color": "#2563eb",
+      "background": "#eff6ff",
+      "border": "#60a5fa",
+      "dark_background": "#172554",
+      "dark_border": "#1d4ed8",
+      "badge": "Running",
+      "status_code": "running",
+      "icon": "Loader2"
+    },
+    "waiting_approval": {
+      "color": "#d97706",
+      "background": "#fffbeb",
+      "border": "#f59e0b",
+      "dark_background": "#451a03",
+      "dark_border": "#b45309",
+      "badge": "Waiting Approval",
+      "status_code": "waiting_approval",
+      "icon": "UserCheck"
+    },
+    "success": {
+      "color": "#16a34a",
+      "background": "#f0fdf4",
+      "border": "#4ade80",
+      "dark_background": "#052e16",
+      "dark_border": "#15803d",
+      "badge": "Completed",
+      "status_code": "success",
+      "icon": "CheckCircle2"
+    },
+    "failed": {
+      "color": "#dc2626",
+      "background": "#fef2f2",
+      "border": "#f87171",
+      "dark_background": "#450a0a",
+      "dark_border": "#b91c1c",
+      "badge": "Failed",
+      "status_code": "failed",
+      "icon": "XCircle"
+    }
+  }
+}

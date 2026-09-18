@@ -1,0 +1,58 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1276 >>
+stream
+BT
+/F1 12 Tf
+72 712 Td
+(John Doe) Tj
+0 -16 Td (Email: john.doe.dev@example.com) Tj
+0 -16 Td (Phone: \(555\) 234-5678) Tj
+0 -16 Td (Location: San Francisco, CA) Tj
+0 -16 Td () Tj
+0 -16 Td (Professional Summary:) Tj
+0 -16 Td (Senior Frontend Developer with 4+ years of experience building modern web applications.) Tj
+0 -16 Td (Specialized in React, JavaScript, Next.js, CSS, HTML5, Tailwind CSS, and REST APIs.) Tj
+0 -16 Td () Tj
+0 -16 Td (Skills:) Tj
+0 -16 Td (React, JavaScript, Next.js, Tailwind CSS, CSS, HTML, REST APIs, Git, TypeScript) Tj
+0 -16 Td () Tj
+0 -16 Td (Experience:) Tj
+0 -16 Td (Frontend Engineer - TechNova Inc \(2022 - Present\)) Tj
+0 -16 Td (- Engineered responsive client dashboards in React and Next.js with stateful workflow management.) Tj
+0 -16 Td (- Improved Core Web Vitals and load performance by 35% through code splitting.) Tj
+0 -16 Td () Tj
+0 -16 Td (Software Developer - CodeCraft Labs \(2020 - 2022\)) Tj
+0 -16 Td (- Built interactive single page applications using React, JavaScript, and Tailwind CSS.) Tj
+0 -16 Td (- Collaborated with product designers to implement pixel-perfect user experiences.) Tj
+0 -16 Td () Tj
+0 -16 Td (Education:) Tj
+0 -16 Td (Bachelor of Science in Computer Science - University of California \(2016 - 2020\)) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000234 00000 n 
+00000001576 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1676
+%%EOF

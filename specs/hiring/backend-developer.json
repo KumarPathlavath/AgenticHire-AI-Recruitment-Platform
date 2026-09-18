@@ -1,0 +1,13 @@
+{
+  "role": "Backend Developer",
+  "required_skills": ["Node.js", "Express", "MongoDB"],
+  "preferred_skills": ["Docker", "Redis", "LangChain", "Qdrant"],
+  "min_experience": 3,
+  "minimum_score": 75,
+  "interview_rounds": 2,
+  "weights": {
+    "required_skills": 0.5,
+    "preferred_skills": 0.25,
+    "experience": 0.25
+  }
+}

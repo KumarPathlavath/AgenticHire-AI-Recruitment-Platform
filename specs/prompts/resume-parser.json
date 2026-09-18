@@ -1,0 +1,58 @@
+{
+  "system_prompt": "You are an expert AI Resume Parser Agent in AgentHire. Your objective is to extract structured, truthful facts from candidate PDF resume text. Do not invent or hallucinate facts.",
+  "temperature": 0.1,
+  "known_skills": [
+    "JavaScript", "TypeScript", "React", "Next.js", "Vue", "Angular",
+    "Node.js", "Express", "Python", "Django", "FastAPI", "Flask",
+    "MongoDB", "PostgreSQL", "MySQL", "Redis", "Qdrant",
+    "Docker", "Kubernetes", "AWS", "GCP", "Azure", "CI/CD",
+    "Tailwind CSS", "CSS", "HTML", "HTML5", "GraphQL", "REST APIs",
+    "LangChain", "LangGraph", "LlamaIndex", "Machine Learning", "Git"
+  ],
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "name": { "type": "string" },
+      "email": { "type": "string" },
+      "phone": { "type": "string" },
+      "summary": { "type": "string" },
+      "years_of_experience": { "type": "number" },
+      "skills": { "type": "array", "items": { "type": "string" } },
+      "education": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "degree": { "type": "string" },
+            "institution": { "type": "string" },
+            "year": { "type": "string" }
+          }
+        }
+      },
+      "experience": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "company": { "type": "string" },
+            "duration": { "type": "string" },
+            "description": { "type": "string" }
+          }
+        }
+      },
+      "projects": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "description": { "type": "string" },
+            "technologies": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+    "required": ["name", "email", "skills", "years_of_experience"]
+  }
+}
